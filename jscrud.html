@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Javascript Crud
+    </title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+</head>
+
+<body><br>
+    <div class="row">
+        <div class="col-5">
+            <div class="card">
+                <div class="card-header  text-center">
+                    <b>Javascript Crud</b>
+                </div>
+                <div class="card-body">
+                    <form onsubmit="event.preventDefault();formsubmit();" autocomplete="off">
+                        <div>
+                            <label for="name">Name</label>
+                            <input type="text" class="form-control" name="name" id="name">
+                        </div>
+                        <div>
+                            <label for="date">Date</label>
+                            <input type="date" class="form-control" name="date" id="date">
+                        </div>
+                        <div>
+                            <label for="activity">Activity</label>
+                            <input type="text" class="form-control" name="activity" id="activity">
+                        </div>
+                        <div>
+                            <label for="duration">Duration</label>
+                            <input type="time" name="duration" id="duration" class="form-control">
+                        </div><br>
+                        <input type="submit" class="btn btn-primary text-center" value="Submit">
+                    </form>
+                  </div>
+            </div>
+        </div>
+        <div class="col-6">
+            <div class="card">
+                 <table class="list card-header" id="list">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Date</th>
+                            <th>Activity</th>
+                            <th>Duration</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody >
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>   
+    <script src="jscurd.js"></script>
+</body>
+
+</html>
